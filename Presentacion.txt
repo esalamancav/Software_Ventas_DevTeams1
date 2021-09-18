@@ -9,5 +9,9 @@ Oscar Barbosa Ospina
 
 Nicolás Martínez Rojas
 
-Edisson Ricardo Barbosa
+<<<<<<< HEAD
+Edisson Ricardo Barbosa David
 
+=======
+Edisson Ricardo Barbosa 
+>>>>>>> baf063f1f7d6965dc8068baa34ce14006ae76f1c
