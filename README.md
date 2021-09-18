@@ -7,4 +7,4 @@ Ensayo Edison
 | # | NOMBRE | CORREO | DESCRIPCION |
 |---|---|---|---|
 | 1 | Esteban Salamanca | esalamancav@gmail.com | Tengo 38 años y soy ingeniero en control electronico de la universidad distrital |
-
+| 2 | Oscar Barbosa     | osbar6@hotmail.com    | Tengo 46 años y quiero actualizar mis conocimientos en TI con este curso         |

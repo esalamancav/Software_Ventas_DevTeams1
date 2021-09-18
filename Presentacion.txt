@@ -5,3 +5,5 @@ Se propone analizar, diseñar y construir una aplicación software que permita c
 
 Integrantes del equipo:
 
+Oscar Barbosa Ospina
+
