@@ -10,4 +10,7 @@ Oscar Barbosa Ospina
 Nicolás Martínez Rojas
 
 Edisson Ricardo Barbosa 
+<<<<<<< HEAD
 
+=======
+>>>>>>> refs/remotes/origin/main
