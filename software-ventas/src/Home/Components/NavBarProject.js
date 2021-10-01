@@ -1,12 +1,12 @@
-import React from 'react';
+
 import Navbar from 'react-bootstrap/Navbar';
-import { NavDropdown } from 'react-bootstrap';
-import {Container} from 'react-bootstrap';
-import {Nav} from 'react-bootstrap';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import Container from 'react-bootstrap/Container'
+import Nav from 'react-bootstrap/Nav';
 
 
 
-function NavBarProject(){
+const NavBarProject = () =>{
     return(
         <>
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
@@ -40,4 +40,4 @@ function NavBarProject(){
     );
 }
 
-export {NavBarProject};
+export default NavBarProject;

@@ -1,11 +1,13 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Home} from "./Home/Pages/Home";
+import Home from "./Home/Pages/Home";
+import Productos from './Home/Pages/Productos';
 
 
-function App() {
+const App= ()=> {
   return (
-      <Home/>
+      <Home/> 
+     /*<Productos />*/
   );
 }
 
