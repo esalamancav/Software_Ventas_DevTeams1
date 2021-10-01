@@ -1,11 +1,11 @@
-import React from 'react';
+
 import Navbar from 'react-bootstrap/Navbar';
-import {Container} from 'react-bootstrap';
-import {Nav} from 'react-bootstrap';
+import Container from 'react-bootstrap/Container'
+import Nav from 'react-bootstrap/Nav';
 
 
 
-function NavBarLandingPage(){
+const NavBarLandingPage= ()=>{
     return(
         <>
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
@@ -26,4 +26,4 @@ function NavBarLandingPage(){
     );
 }
 
-export {NavBarLandingPage};
+export default NavBarLandingPage;
