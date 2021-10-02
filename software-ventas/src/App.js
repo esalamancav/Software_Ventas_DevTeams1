@@ -6,8 +6,8 @@ import Productos from './Home/Pages/Productos';
 
 const App= ()=> {
   return (
-      <Home/> 
-     /*<Productos />*/
+      /*<Home/>*/ 
+     <Productos />
   );
 }
 
