@@ -1,9 +1,10 @@
 import React from 'react';
-import {NavBarProject} from "src/Home/Components/NavBarProject";
+//import {NavBarProject} from "../Components/NavBarProject.js";
 
 function Home(){
     return(
-        <NavBarProject/>
+       //<NavBarProject/>
+       <h1>Esta es la pagina de Home</h1> 
     );
 }
 
