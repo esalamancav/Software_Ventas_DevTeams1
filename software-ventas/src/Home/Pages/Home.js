@@ -1,11 +1,11 @@
 import React from 'react';
-//import {NavBarProject} from "../Components/NavBarProject.js";
+import NavBarProject from '../Components/NavBarProject';
 
-function Home(){
+const Home=() =>{
     return(
        //<NavBarProject/>
        <h1>Esta es la pagina de Home</h1> 
     );
 }
 
-export {Home};
+export default Home;

@@ -1,9 +1,11 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import {Home} from "./Home/Pages/Home";
+
+import Home from "./Home/Pages/Home";
+import Productos from './GestionProductos/Pages/Productos';
 import Admin from "./GestionUsuarios/pages/Admin";
-import {NavBarProject} from "./Home/Components/NavBarProject";
+import NavBarProject from "./Home/Components/NavBarProject";
 import {BrowserRouter as Router,
   Route,
   Switch,
@@ -11,7 +13,7 @@ import {BrowserRouter as Router,
 } from "react-router-dom";
 
 
-function App() {
+const App= ()=> {
   return (
     <Router>
       <NavBarProject />
@@ -19,13 +21,16 @@ function App() {
         <Route path="/" exact>
           <Home/>
         </Route>
+        <Route path="/Productos" exact>
+          <Productos/>
+        </Route>
         <Route path="/Admin" exact>
           <Admin/>
         </Route> 
       </Switch>
     </Router>
-      
-  );
+  )
+
 }
 
 export default App;

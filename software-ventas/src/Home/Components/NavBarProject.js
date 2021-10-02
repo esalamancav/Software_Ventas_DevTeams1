@@ -1,18 +1,20 @@
-import React from 'react';
+
 import Navbar from 'react-bootstrap/Navbar';
-import { NavDropdown } from 'react-bootstrap';
-import {Container} from 'react-bootstrap';
-import {Nav} from 'react-bootstrap';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import Container from 'react-bootstrap/Container'
+import Nav from 'react-bootstrap/Nav';
+import logomision from "./logomision.PNG";
 
 
 
-function NavBarProject(){
+const NavBarProject = () =>{
     return(
         <>
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
         <Container>
+
         <Navbar.Brand href="/">
-            <img alt="SurtimaxLogo" src="https://www.america-retail.com/static//2019/03/Surtimax.png" width="100" height="40"/>
+            <img  src={logomision} width="100" height="40" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
@@ -40,4 +42,4 @@ function NavBarProject(){
     );
 }
 
-export {NavBarProject};
+export default NavBarProject;
