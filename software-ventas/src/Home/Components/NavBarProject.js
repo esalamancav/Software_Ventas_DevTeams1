@@ -21,7 +21,7 @@ const NavBarProject = () =>{
             <Nav className="me-auto">
             <NavDropdown title="Productos" id="collasible-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">Crear producto</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">Administrar productos</NavDropdown.Item>
+                <NavDropdown.Item href="/Productos">Administrar productos</NavDropdown.Item>
             </NavDropdown>
             <NavDropdown title="Ventas" id="collasible-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">Crear venta</NavDropdown.Item>

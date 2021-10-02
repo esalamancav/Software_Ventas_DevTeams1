@@ -2,14 +2,13 @@ import './Productos.css';
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Form from 'react-bootstrap/Form'
-import NavBarProject from '../../Home/Components/NavBarProject';
 import Button from 'react-bootstrap/Button'
 import Container  from 'react-bootstrap/Container';
 const Productos = () => {
     return(
         
         <>
-        <header><NavBarProject/></header>
+      
         <Container className="col-6">
         <h1>Gestión de Productos</h1>
        
