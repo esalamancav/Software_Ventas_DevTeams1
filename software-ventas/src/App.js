@@ -9,6 +9,7 @@ import NavBarProject from "./Home/Components/NavBarProject";
 import {BrowserRouter as Router,
   Route,
   Switch,
+  // eslint-disable-next-line no-unused-vars
   Redirect,
 } from "react-router-dom";
 

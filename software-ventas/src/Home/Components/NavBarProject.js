@@ -14,7 +14,7 @@ const NavBarProject = () =>{
         <Container>
 
         <Navbar.Brand href="/">
-            <img  src={logomision} width="100" height="40" />
+            <img  src={logomision} width="100" height="40" alt="Logo MinTic" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
