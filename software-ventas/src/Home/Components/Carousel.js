@@ -3,15 +3,17 @@ import {Carousel} from 'react-bootstrap';
 import logoMINTIC from "./logoMINTIC.png";
 import logoUDEA from "./logoUDEA.png";
 import logoMisionTic from "./logoMisionTic.png";
+import "./Carousel.css";
 
 const CarouselHomePage = () => {
     return(
     <>
     <h1>Software de ventas DevTeams1</h1>
+    
         <Carousel variant="dark">
             <Carousel.Item interval={1000}>
                 <img
-                className="d-block w-100"
+                className="img-responsive center-block"
                 src={logoMisionTic}
                 alt="First slide"
                 width="800"
@@ -24,7 +26,7 @@ const CarouselHomePage = () => {
             </Carousel.Item>
                 <Carousel.Item interval={500}>
                     <img
-                    className="d-block w-100"
+                    className="d-block w-800 h-400"
                     src={logoUDEA}
                     alt="Second slide"
                     width="800"
@@ -37,7 +39,7 @@ const CarouselHomePage = () => {
             </Carousel.Item>
             <Carousel.Item>
                 <img
-                className="d-block w-100"
+                className="d-block w-800 h-400"
                 src={logoMINTIC}
                 alt="Third slide"
                 width="800"
@@ -49,6 +51,7 @@ const CarouselHomePage = () => {
                 </Carousel.Caption>
             </Carousel.Item>
         </Carousel>
+    
     </>
     );
 }

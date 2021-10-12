@@ -3,7 +3,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Container from 'react-bootstrap/Container'
 import Nav from 'react-bootstrap/Nav';
-import logomision from "./logomision.PNG";
+import hessLogo from "./hessLogo.jpeg";
 
 
 
@@ -14,7 +14,7 @@ const NavBarProject = () =>{
         <Container>
 
         <Navbar.Brand href="/">
-            <img  src={logomision} width="100" height="40" alt="Logo MinTic" />
+            <img  src={hessLogo} width="100" height="40" alt="Logo Hess" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
@@ -24,7 +24,7 @@ const NavBarProject = () =>{
                 <NavDropdown.Item href="/Productos">Administrar productos</NavDropdown.Item>
             </NavDropdown>
             <NavDropdown title="Ventas" id="collasible-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Crear venta</NavDropdown.Item>
+                <NavDropdown.Item href="/CrearVenta">Crear venta</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">Gestionar ventas</NavDropdown.Item>
             </NavDropdown>
             <Nav.Link href="/Admin">Usuarios</Nav.Link>
