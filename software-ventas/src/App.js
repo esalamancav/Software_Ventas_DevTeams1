@@ -7,8 +7,7 @@ import Productos from './GestionProductos/Pages/Productos';
 import Admin from "./GestionUsuarios/pages/Admin";
 import CrearPro from './GestionProductos/Pages/CrearPro';
 import NavBarProject from "./Home/Components/NavBarProject";
-import Footer from "./Home/Components/Footer";
-import CrearVenta from "./GestionVentas/Pages/crearVent";
+import CrearVenta from "./GestionVentas/Pages/CrearVenta";
 import {BrowserRouter as Router,
   Route,
   Switch,
@@ -40,7 +39,6 @@ const App= ()=> {
       
       </Switch>
 
-      <Footer/>
     </Router>
   )
 

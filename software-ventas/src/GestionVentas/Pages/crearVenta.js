@@ -1,81 +1,19 @@
-import './crearVenta.css';
-import React, { useReducer , useState} from 'react';
-//import Product from '../Product/Product';
-
-const formReducer = (state, event) => {
-  return {
-    ...state,
-    [event.name]: event.value
-  }
- }
+import FormularioVenta from "../Components/formularioVenta";
+import Container  from 'react-bootstrap/Container';
 
 const CrearVenta = ()=> {
-  const [formData, setFormData] = useReducer(formReducer, {});
-  const [submitting, setSubmitting] = useState(false);
-  const handleSubmit = event => {
-    event.preventDefault();
-    setSubmitting(true);
+  return(
+    <>  
+      
+          <h1>Modulo de creación de venta</h1>
+        
+        <FormularioVenta/>
     
-    setTimeout(() => {
-      setSubmitting(false);
-    },3000)
-  }
-
-  const handleChange = event => {
-    const isCheckbox = event.target.type === 'checkbox';
-    setFormData({
-      name: event.target.name,
-      value: isCheckbox ? event.target.checked : event.target.value,
-    });
-  }
-
-  return (
-    <div className="wrapper">
-      <h1>How About Them Apples</h1>
-      {submitting &&
-       <div>
-         You are submitting the following:
-         <ul>
-           {Object.entries(formData).map(([name, value]) => (
-             <li key={name}><strong>{name}</strong>:{value.toString()}</li>
-           ))}
-         </ul>
-       </div>
-      }
-      <form onSubmit={handleSubmit}>
-      <fieldset disabled={submitting}>
-         <label>
-           <p>Name</p>
-           <input name="name" onChange={handleChange}/>
-         </label>
-      </fieldset>
-      <fieldset disabled={submitting}>
-         <label>
-           <p>Apples</p>
-           <select name="apple" onChange={handleChange}>
-               <option value="">--Please choose an option--</option>
-               <option value="fuji">Fuji</option>
-               <option value="jonathan">Jonathan</option>
-               <option value="honey-crisp">Honey Crisp</option>
-           </select>
-         </label>
-         <label>
-           <p>Count</p>
-           <input type="number" name="count" onChange={handleChange} step="1"/>
-         </label>
-         <label>
-           <p>Gift Wrap</p>
-           <input 
-           type={formData['gift-wrap'] || false}
-           disabled={formData.apple !== 'fuji'} 
-           name="gift-wrap" 
-           onChange={handleChange} />
-         </label>
-       </fieldset>
-      <button type="submit" disabled={submitting}>Submit</button>
-      </form>
-    </div>
-  );
+      
+       
+       
+    </>
+  )
 }
 
 export default CrearVenta;
