@@ -11,9 +11,6 @@ const Formulario = () =>{
       Descripcion: '',
       Valor:0,
       Estado:''
-
-
-
     }}
      onSubmit={(valores,{resetForm})=>{
          resetForm();
