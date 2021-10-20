@@ -1,6 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import 'react-bootstrap-icons';
+import * as Icon from 'react-bootstrap-icons';
 //import "./App.css";
 
 import {
@@ -86,8 +86,8 @@ class GestionarVentas extends React.Component {
     arreglo.map((registro) => {
       if (dato.id === registro.id) {
         arreglo[contador].Descripcion = dato.Descripcion;
-        arreglo[contador].Cantidad = dato.cantidad;
-        arreglo[contador].Valor = dato.Rol;
+        arreglo[contador].Cantidad = dato.Cantidad;
+        arreglo[contador].Valor = dato.Valor;
         arreglo[contador].Estado = dato.Estado;
       }
       contador++;
@@ -145,7 +145,7 @@ class GestionarVentas extends React.Component {
             />
             <button type="button" className="btnBuscar" /*onClick={onClear}*/>
               {" "}
-              <i class="bi bi-search"></i>
+              <i class="icon.bi bi-search"></i>
             </button>
           </div>
           <br />
@@ -158,7 +158,7 @@ class GestionarVentas extends React.Component {
             <th>Cantidad</th>
             <th>Valor</th>
             <th>Estado</th>
-            <th>Fecha_Venta</th>
+            <th>Fecha_venta</th>
             <th>Acción</th>
           </tr>
         </thead>
@@ -216,10 +216,10 @@ class GestionarVentas extends React.Component {
               </label>
               <input
                 className="form-control"
-                name="Nombre"
+                name="Descripcion"
                 type="text"
                 onChange={this.handleChange}
-                value={this.state.form.Nombre}
+                value={this.state.form.Descripcion}
               />
             </FormGroup>
             
@@ -229,22 +229,22 @@ class GestionarVentas extends React.Component {
               </label>
               <input
                 className="form-control"
-                name="Apellido"
+                name="Cantidad"
                 type="text"
                 onChange={this.handleChange}
-                value={this.state.form.Apellido}
+                value={this.state.form.Cantidad}
               />
             </FormGroup>
             <FormGroup>
               <label>
-                valor: 
+                Valor: 
               </label>
               <input
                 className="form-control"
-                name="Rol"
+                name="Valor"
                 type="text"
                 onChange={this.handleChange}
-                value={this.state.form.Rol}
+                value={this.state.form.Valor}
               />
             </FormGroup>
             <FormGroup>
