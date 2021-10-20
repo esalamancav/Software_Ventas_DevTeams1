@@ -7,6 +7,7 @@ import Productos from './GestionProductos/Pages/Productos';
 import Admin from "./GestionUsuarios/pages/Admin";
 import CrearPro from './GestionProductos/Pages/CrearPro';
 import NavBarProject from "./Home/Components/NavBarProject";
+import CrearVenta from "./GestionVentas/Pages/crearVenta";
 import {BrowserRouter as Router,
   Route,
   Switch,
@@ -32,8 +33,12 @@ const App= ()=> {
         <Route path="/Admin" exact>
           <Admin/>
         </Route>
+        <Route path="/CrearVenta" exact>
+          <CrearVenta/>
+        </Route>
       
       </Switch>
+
     </Router>
   )
 
