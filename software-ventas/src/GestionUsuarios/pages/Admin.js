@@ -24,24 +24,24 @@ const user_table = [
   },
   {
     id: 2, 
-    Nombre: "Esteban",
-    Apellido: "Salamanca Vasquez",
+    Nombre: "Edisson",
+    Apellido: "Barbosa David",
     Rol: "1",
     Estado: 1,
     Fecha_creacion: "2021/01/15"
   },
   {
     id: 3,
-    Nombre: "Esteban",
-    Apellido: "Salamanca Vasquez",
+    Nombre: "Oscar",
+    Apellido: "Barbosa Ospina",
     Rol: "1",
     Estado: 1,
     Fecha_creacion: "2021/01/15"
   },
   {
     id: 4,
-    Nombre: "Esteban",
-    Apellido: "Salamanca Vasquez",
+    Nombre: "Nicolas",
+    Apellido: "Martinez Rojas",
     Rol: "1",
     Estado: 1,
     Fecha_creacion: "2021/01/15"

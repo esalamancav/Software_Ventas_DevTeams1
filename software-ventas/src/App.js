@@ -8,6 +8,7 @@ import Admin from "./GestionUsuarios/pages/Admin";
 import CrearPro from './GestionProductos/Pages/CrearPro';
 import NavBarProject from "./Home/Components/NavBarProject";
 import CrearVenta from "./GestionVentas/Pages/crearVenta";
+import GestionarVentas from "./GestionVentas/Pages/GestionarVentas";
 import {BrowserRouter as Router,
   Route,
   Switch,
@@ -35,6 +36,9 @@ const App= ()=> {
         </Route>
         <Route path="/CrearVenta" exact>
           <CrearVenta/>
+        </Route>
+        <Route path="/GestionarVentas" exact>
+          <GestionarVentas/>
         </Route>
       
       </Switch>
