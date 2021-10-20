@@ -1,6 +1,6 @@
 import Container  from 'react-bootstrap/Container';
 import Formulario from '../Components/Formulario';
-
+import './CrearPro.css';
 
 const CrearPro= () => {
     return(
