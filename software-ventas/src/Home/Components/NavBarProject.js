@@ -4,10 +4,15 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import Container from 'react-bootstrap/Container'
 import Nav from 'react-bootstrap/Nav';
 import hessLogo from "./hessLogo.jpeg";
+import { LoginButton } from '../Pages/Login';
+import { LogoutButton } from '../Pages/Logout';
+import { Profile } from '../Pages/Profile';
+import { useAuth0 } from '@auth0/auth0-react';
 
 
 
 const NavBarProject = () =>{
+    const {isAuthenticated,loginWithRedirect,logout}=useAuth0();
     return(
         <>
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
@@ -31,8 +36,15 @@ const NavBarProject = () =>{
             </Nav>
             <Nav>
             <Nav.Link href="#deets">DevTeams1</Nav.Link>
-            <Nav.Link eventKey={2} href="#memes">
-                Logout
+            <Nav.Link  href="">
+                {isAuthenticated ? 
+                <>
+                <Profile/>
+                <LogoutButton/>
+               
+                </>
+                :<LoginButton/>}
+                
             </Nav.Link>
             </Nav>
         </Navbar.Collapse>
