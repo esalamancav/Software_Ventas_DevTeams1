@@ -1,10 +1,18 @@
 import React from "react";
-import { useAuth0 } from "@auth0/auth0-react";
-import Button from 'react-bootstrap/Button';
+import { GoogleLogout } from 'react-google-login';
+
 
 
 export const LogoutButton = () =>{
-    const {logout}=useAuth0();
-    return  <Button onClick={() => logout({returnTo:window.location.origin})}>Logout </Button>
+    const logout = (response) => {
+        
+        localStorage.removeItem("token");
+      }
+    return   <GoogleLogout
+    clientId="518565057086-173mf1nl3v1sucqptik3arl0q6r6oop2.apps.googleusercontent.com"
+    buttonText="Logout"
+    onLogoutSuccess={logout}
+  >
+  </GoogleLogout>
     
 }
