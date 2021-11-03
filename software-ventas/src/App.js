@@ -1,6 +1,6 @@
 import './App.css';
+import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
 
 import Home from "./Home/Pages/Home";
 import Productos from './GestionProductos/Pages/Productos';
@@ -19,11 +19,12 @@ import {BrowserRouter as Router,
 
 const App= ()=> {
   
-    
+ 
   
   return (
     <Router>
       <NavBarProject />
+      
       <Switch>
       <Route path="/crearPro" exact>
           <CrearPro/>
