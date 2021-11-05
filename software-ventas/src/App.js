@@ -1,5 +1,5 @@
 import './App.css';
-import React from 'react';
+import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Home from "./Home/Pages/Home";
@@ -9,6 +9,8 @@ import CrearPro from './GestionProductos/Pages/CrearPro';
 import NavBarProject from "./Home/Components/NavBarProject";
 import CrearVenta from "./GestionVentas/Pages/crearVenta";
 import GestionarVentas from "./GestionVentas/Pages/GestionarVentas";
+import LoginButton from './Home/Pages/Login';
+import { useEffect } from 'react';
 import {BrowserRouter as Router,
   Route,
   Switch,
@@ -18,14 +20,17 @@ import {BrowserRouter as Router,
 
 
 const App= ()=> {
-  
  
-  
+ 
   return (
+    
     <Router>
-      <NavBarProject />
+      <NavBarProject  />
       
       <Switch>
+       
+    
+
       <Route path="/crearPro" exact>
           <CrearPro/>
         </Route> 

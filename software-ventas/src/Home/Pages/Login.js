@@ -4,23 +4,24 @@ import GoogleLogin from 'react-google-login';
 import { GoogleLogout } from 'react-google-login';
 
 
-export const LoginButton = () =>{
-  const [isLoggedIn,setIsLoggedIn]=useState(false);
+export const LoginButton = ({setIslogged,setNotLogged,isLoggedIn}) =>{
+
 
   const responseGoogle = (response) => {
     console.log(response);
     localStorage.setItem("token",response.tokenId);
-    setIsLoggedIn(true);
+    setIslogged();
   }
   const error = (response) => {
     console.log("Error de acceso");
     localStorage.removeItem("token");
-    setIsLoggedIn(false);
+    setNotLogged(false);
   }
   const logout = (response) => {
     
     console.clear();
-    setIsLoggedIn(false);
+    setNotLogged(false);
+    localStorage.removeItem("token");
   }
   return (isLoggedIn,
     <div>
@@ -44,3 +45,4 @@ export const LoginButton = () =>{
   </div>);
 }
 export default LoginButton;
+
