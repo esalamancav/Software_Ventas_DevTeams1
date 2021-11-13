@@ -106,10 +106,10 @@ const FormularioVenta = ()=>{
                     onChange={handleChange}
                     >
                         <option value="">--Seleccione un producto--</option>
-                        <option value="Pala">Pala</option>
-                        <option value="Martillo">Martillo</option>
-                        <option value="Taladro">Taladro</option>
-                        <option value="Serrucho">Serrucho</option>
+                        <option value="Whisky">Whisky</option>
+                        <option value="Ron">Ron</option>
+                        <option value="Cerveza">Cerveza</option>
+                        <option value="Aguardiente">Aguardiente</option>
                     </Form.Select>
                     </Form.Group>
 
