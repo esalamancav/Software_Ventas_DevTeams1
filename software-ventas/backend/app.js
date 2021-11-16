@@ -9,7 +9,7 @@ const productsRoutes = require("./routes/products");
 const usersRoutes = require("./routes/users");
 //Importar Routes de sales
 const salesRoutes = require("./routes/sales");
-
+const get_salesRoutes = require("./routes/get_sales.js");
 //Para que el express entienda el Json
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
@@ -24,6 +24,7 @@ mongoose.connect("mongodb+srv://DB_ventas:ventas123@cluster0.1bky8.mongodb.net/m
 app.use("/api/products", productsRoutes);
 app.use("/api/users", usersRoutes);
 app.use("/api/sales", salesRoutes);
+app.use("/api/get_sales", get_salesRoutes);
 
 
 //exportar app como un modulo. Como el export default de React

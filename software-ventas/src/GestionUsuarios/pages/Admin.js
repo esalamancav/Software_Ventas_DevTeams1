@@ -1,4 +1,3 @@
-
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 //import "./App.css";
@@ -11,45 +10,19 @@ import {
   FormGroup,
 } from "react-bootstrap"
 
-//import {ModalHeader} from "reactstrap";
-
 const user_table = [
   {
     id: 1,
-    Nombre: "Esteban",
-    Apellido: "Salamanca Vasquez",
-    Rol: "1",
-    Estado: 1,
-    Fecha_creacion: "2021/01/15"
+    Nombre: "Cerveza",
+    Apellido: 1,
+    Rol: "3500",
+    Estado: "En proceso",
+    Fecha_creacion: "2021/10/15"
   },
-  {
-    id: 2, 
-    Nombre: "Edisson",
-    Apellido: "Barbosa David",
-    Rol: "1",
-    Estado: 1,
-    Fecha_creacion: "2021/01/15"
-  },
-  {
-    id: 3,
-    Nombre: "Oscar",
-    Apellido: "Barbosa Ospina",
-    Rol: "1",
-    Estado: 1,
-    Fecha_creacion: "2021/01/15"
-  },
-  {
-    id: 4,
-    Nombre: "Nicolas",
-    Apellido: "Martinez Rojas",
-    Rol: "1",
-    Estado: 1,
-    Fecha_creacion: "2021/01/15"
-  },
+]
+//import {ModalHeader} from "reactstrap";
 
-
-     
-  ]
+//const user_table = fetch()
   
 class Admin extends React.Component {
 
@@ -136,7 +109,7 @@ class Admin extends React.Component {
   };
 
 
-  render() {
+  render() { 
     return (
     <div>
         <h1 className="text-center mt-4 mb-4">Administracion de Usuarios</h1>

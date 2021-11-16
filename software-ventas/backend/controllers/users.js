@@ -11,7 +11,7 @@ exports.addUsers = (req, res) => {
     const userAdd = new Users({
         Nombre: req.body.Nombre,
         Apellido: req.body.Apellido,
-        Role: req.body.Role,
+        Rol: req.body.Rol,
         Estado: req.body.Estado,
         Fecha_creacion: req.body.Fecha_creacion,
     });

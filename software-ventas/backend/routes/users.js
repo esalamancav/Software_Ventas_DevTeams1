@@ -7,7 +7,8 @@ const userscontroller = require("../controllers/users");
 
 //Rutas para las operaciones sobre productos
 router.get("", userscontroller.getUsers);
-router.post("/:id", userscontroller.addUsers);
+//router.post("/:id", userscontroller.addUsers);
+router.post("", userscontroller.addUsers);
 //router.get("", userscontroller.addUsersId);
 
 //exportar modulo

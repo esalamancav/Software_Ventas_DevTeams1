@@ -11,6 +11,12 @@ import CrearVenta from "./GestionVentas/Pages/crearVenta";
 import GestionarVentas from "./GestionVentas/Pages/GestionarVentas";
 import LoginButton from './Home/Pages/Login';
 import { useEffect } from 'react';
+import callApi from './api';
+
+import CrearProducto from "./GestionProductos/Pages/CrearPro";
+//import GestorProductos from "./productos/pages/Gestion";
+//import EditarProducto from "./productos/pages/EditarProducto";
+
 import {BrowserRouter as Router,
   Route,
   Switch,
@@ -19,18 +25,31 @@ import {BrowserRouter as Router,
 } from "react-router-dom";
 
 
-const App= ()=> {
- 
- 
+function App() {
+  const [logged, setLogged] = useState(false);
+  const [carrito, setCarrito] = useState([]);
+  const [productos, setProductos] = useState([]);
+  const [ventas, setVentas] = useState([]);
+  const [usuarios, setUsuarios] = useState([]);
+
+
+  //useEffect(() => {
+  //  const fetchData = async () => {
+  //    const response = await callApi();
+  //    setProductos(response);
+      
+      
+  //  };
+
+  //  fetchData();
+ // }, []);
+
   return (
     
     <Router>
       <NavBarProject  />
       
       <Switch>
-       
-    
-
       <Route path="/crearPro" exact>
           <CrearPro/>
         </Route> 
@@ -53,8 +72,8 @@ const App= ()=> {
       </Switch>
 
     </Router>
-  )
-
-}
+  );
+} 
+ 
 
 export default App;

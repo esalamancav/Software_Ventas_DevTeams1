@@ -8,13 +8,13 @@ exports.getProducts = (req, res) => {
 
 exports.addProduct = (req, res) => {
   const productoAdd = new Producto({
-    Descripción: req.body.descripción,
-    Valor: req.body.valor,
-    Estado: req.body.estado,
+    Descripción: req.body.Descripción,
+    Valor: req.body.Valor,
+    Estado: req.body.Estado,
     
   });
-  productoAdd.save().then((createdUsers) => {
-    console.log(createdUsers);
+  productoAdd.save().then((createdProduct) => {
+    console.log(createdProduct);
     res.status(201).json("Creado ok")
 })
 };
